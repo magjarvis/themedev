@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { padding: 0; border: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; background: #D9D2B8 url('../images/tanpribg.gif') repeat; }
+body[style] { padding: 0; border: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; background: #D9D2B8 url('http://isgs-zinc.ad.uillinois.edu/?q=sites/all/themes/ISGS/assets/images/tanpribg.gif') repeat; }
+
+#main-content { clear:both; color: #000; font-weight: normal;  margin: 5px 10px 0 10px; padding: 15px 15px; }
+#content { display: block; float: left; width: 74%; padding-bottom: 25px; }
+.page-content { padding-right: 25px; }
+
+#page-wrap { padding: 0; margin: 0; width: 56.25em; margin: 0 auto; background-color: #ffffff; position: relative; border-left: 1px solid #9D8977;  border-right: 1px solid #9D8977; border-bottom: 1px solid #9D8977; }
+
+/*-----Drupal Overrides for front page-----------*/
+
+#first-time { display: none; }
+
+/*------------ Sidebar Blocks --------------------*/
+
+#sidebar { float: left; height: 100%; width: 25%; padding-bottom: 25px; }
+.sidebar-box { display: block; width: 100%; margin: 0px 0px 20px 5px;}
+.sidebar-box h2 { padding-top: 5px; margin-top: 0px; margin-bottom: 10px; line-height: 20px; font-size: 14px; border-top: 3px solid #b1a192; display: block;  width: 97%; }
+.sidebar-box .field-content a { font-size: 12px; /*padding: 0px 5px 0px 5px;*/ line-height: 14px;}
+.sidebar-box .views-field-title a { display: block; }
+.sidebar-box .field-content p { font-size: 12px; display: block; padding: 10px 5px 0px 5px; line-height: 16px; }
+.sidebar-box .date-display-single { /*padding-left: 5px;*/ display: block; }
+.sidebar-box hr { height: 5px; margin: 10px 0px; color:#E2DDC9; background-color:#E2DDC9; border: none; }
+
+.sidebar-menu { margin-bottom: 20px; margin-top: -10px; }
+.sidebar-menu ul {  background: #fff; font-size: 12px;  list-style-type: none; padding: 0px; margin-left:0px; }
+.sidebar-menu li a { display: block; color: #62564A; width: 97%; padding: 4px 10px; margin-top: 1px; margin-bottom: 0px; font-weight: normal; text-decoration: none; font-weight: normal; font-size: 14px; background: /*#E2DDC9*/ url('../images/arrow-right-off.png') no-repeat 95%; 			
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px; }
+.sidebar-menu li a:hover { 	color: #333; background:/*#efebda*/ url('../images/arrow-right-on.png') no-repeat 95%; }
+.sidebar-menu li li a { width: 100%; padding: 0px 10px 0px 20px; background: #fff url('../images/arrow-right-off.png') no-repeat 7px 4px; font-size: 12px; }
+.sidebar-menu li li a:hover { color: #333;  padding: 0px 10px 0px 20px; background: #fff url('../images/arrow-right-on.png') no-repeat 7px 4px; }
+.sidebar-menu ul ul.menu li { margin: 10px 0px 0px 10px;}
+.menu-home .last a{ padding: 8px 20px 8px 45px; width: 75%; border-bottom: none; background: #a5c7e7 url('../images/facebook.png') no-repeat 3px 0px; 
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px; }
+.menu-home .last a:hover{ color: #333; background: #84acd1 url('../images/facebook.png') no-repeat 3px 0px; border-bottom: none }
+
+.contextual-links li a { background: none; }
+ul.contextual-links li a:hover { background: none; }
+
+
+/*-----Drupal Overrides for sidebar-----------*/
+ul li.expanded { list-style-image: url("../../misc/menu-expanded.png"); list-style-type: none; }
+ul li.collapsed { list-style-image: url("../../misc/menu-collapsed.png"); list-style-type: none; }
+ul li.leaf { list-style-image: url("../../misc/menu-leaf.png"); list-style-type: none; }
+ul.menu { margin-bottom: 0px; }
+ul.menu li {margin-left: 0px; }
+
+
+/*------------- Featured Slideshow Homepage-------------------*/
+
+.featured { height: 400px; overflow: hidden; }
+.featured .view-content { height: 360px; width: 610px;  border: 2px solid #eee; }
+.featured .field-content img { height: 360px; float: left; position: absolute; margin-bottom: 10px;
+		/*  -moz-box-shadow:    2px 2px 3px #a2a2a2;
+		  -webkit-box-shadow: 2px 2px 3px #a2a2a2;
+		  box-shadow:         2px 2px 3px #a2a2a2;*/ }
+.featured .views-field-body .field-content { position:relative; /* absolute position (so we can position it where we want)*/  
+	top: 240px; height: 120px; width:610px;  
+    /* styling bellow */  
+    background-color: #fff;   color: #333; background: rgba(255,255,255,0.85);  filter:alpha(opacity=85); /* IE transparency */  	}
+
+.featured .views-field-body .field-content h2{ padding: 10px 10px 0px 10px; margin: 0px; font-size: 16px; }
+.featured .views-field-body .field-content span{ display:block; padding:5px 10px 10px 10px;  margin:0px; font-size: 12px; line-height:16px;  }
+.featured .item-list ul { width: 610px; background-color: #f5f5f5; padding-bottom: 2px; }
+
+#views_slideshow_controls_text_pause_featured_slideshow-block {display: none;}
+.views-slideshow-controls-bottom { margin-top: 250px; margin-left: 275px; }
+.views-slideshow-controls-text-previous a { background: url('../images/button_sprite.png') no-repeat 0 -18px; display: block; float: left; width: 18px; height: 18px; margin-left: -100px; overflow: hidden; text-indent: -9999px; }
+.views-slideshow-controls-text-previous a:hover, a:active {background-position: 0 -36px; }
+.views-slideshow-controls-text-next a { background: url('../images/button_sprite.png') no-repeat -18px -18px; display: block; float: left; width: 18px; height: 18px; margin-left: 10px; overflow: hidden; text-indent: -9999px;}
+.views-slideshow-controls-text-next a:hover, a:active { background-position: -18px -36px }
+
+.views-slideshow-pager-field-item .views-content-counter a{ display: block; width: 9px; height: 9px; float: left; background: url('../images/slider_inactive.png') no-repeat ; margin-right: 5px; margin-top: 5px; overflow: hidden; text-indent: -9999px; }
+.active .views-content-counter a { background: url('../images/slider_active.png') no-repeat ; }
+
+
+
+/* ------------------ Project Highlights and In News Blocks  ------------------ */
+.highlights { float:left; padding: 0px 10px; display: block; width: 45%; }
+.highlights h2 { padding-bottom: 5px; margin-bottom: 10px; line-height: 20px; font-size: 14px; border-bottom: 2px solid #ccc; }
+.highlights .views-row {display: block; padding: 5px 10px 5px 0px; height: 125px; border-bottom: solid 1px #ddd; margin-bottom: 10px; }
+.highlights .views-field .field-content { color: #333; margin-bottom: 0px; font-size: 0.75em; line-height: 16px; }
+.highlights .views-field-field-project-image .field-content img { float: left; margin: 10px 10px 0px 0px; }
+
+.view-project-highlight-list .item-list { margin-bottom: 20px; }
+
+.innews { float:left; padding: 0px 10px; display: block; width: 45%; }
+.innews h2 { padding-bottom: 5px; margin-bottom: 10px; line-height: 20px; font-size: 14px; border-bottom: 2px solid #ccc; }
+.innews .views-row { display: block; padding: 5px 10px 5px 0px; height: 125px; border-bottom: solid 1px #ddd; margin-bottom: 10px; overflow: hidden;  }
+.innews .views-field .field-content { color: #333; margin-bottom: 0px; font-size: 0.75em; line-height: 16px; }
+
+
+/* ------------------ Upcoming Events Block  ------------------ */
+#block-views-isgs-events-calendar-block-2 .views-field .field-content { display: block; padding: 5px 10px 5px 0px; margin-bottom: 5px; font-size: 12px; line-height: 16px; }
+#block-views-isgs-events-calendar-block-2 .views-field .field-content a { line-height: 16px; display: block; padding-top: 5px; }
+#block-views-isgs-events-calendar-block-2 .views-field .field-content hr{ border: 1px dashed #ccc; }
+.field-name-field-event-location .field-label {font-size: 12px; }
+#block-views-isgs-events-calendar-block-2 ul { list-style: none; margin-left: -25px; }
+/*date*/.date-display-single, .date-display-start {	font-size: 12px; font-weight: bold; line-height: 16px; color: #4d4d4d; }
+		.date-icon .date-display-single, .date-icon .date-display-start { 
+		float: left; 
+		margin: 5px 5px 15px 0px;
+		padding: 5px 3px 0px 3px;
+		display: block; 
+		width: 30px; 
+		height: 30px; 
+		font-size: 14px;
+		line-height: 14px; 
+		overflow: hidden; 
+		text-align: center; 
+		color: #8e8071;
+		border: 3px solid #ccc;
+		background: /*url('../images/calendar-icon.png') no-repeat*/;
+		}
+.date-icon .date-display-end { display: none; }		
+.node-event .date-display-single{ font-size: 16px; }	
+
+/* ------------------ Search Bar Block Styles  ------------------ */
+.searchblock { width: 100%; margin-left: 10px; margin-top: -16px; }
+.searchform { display: inline; border: none; wiidth: 220px; }
+.searchform input { font: normal 12px/100% Arial, Helvetica, sans-serif; color: #999; padding: 5px; }
+.searchform .searchfield {  float: left; background: #fff;  width: 160px; border: solid 1px #b5ae9a; outline: none; margin-top: 16px;
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2); }
+.searchform .searchbutton { display: inline-block; color: #fff; border: none; font-size: 11px; height: 27px; width: 30px; padding: 1px; 
+	background: #9D8977 url('../images/search-img.png') no-repeat center; border: solid 1px #b5ae9a;
+	-webdit-border-radius: 3px 50px 50px 3px;
+	-moz-border-radius: 3px 50px 50px 3px;
+	border-radius: 3px 50px 50px 3px;
+}
+.searchbutton:hover { cursor: pointer; background: #62564A url('../images/search-img.png') no-repeat center; }
+
+
+
+/*-----Drupal Overrides for tabs-----------*/
+ul.primary { border-bottom: 1px solid #ddd;  line-height: normal; list-style: none outside none;  margin: 0px 0px 15px 0px; padding: 0px;  white-space: nowrap; }
+ul.primary li.active a { background-color: #FFFFFF; border: 1px solid #ddd #ddd #fff; font-weight: normal; }
+ul.primary li a { background-color: #eee;  border: 1px solid #ccc #ccc #ddd;  margin-right: 0.5em; padding: 0.15em 1em; text-decoration: none; color: #333; font-weight: normal; }
+ul.primary li a:hover {  background-color: #ddd; }
+
+
+
+/* ------------------ Table Styles taken from Bartik theme -overridden ------------------ */
+table { border: 0;  border-spacing: 0; font-size: 12px; margin: 10px 0; width: 100%; }
+table table { font-size: 12px; }
+#footer-wrapper table { font-size: 1em; }
+table tr th {  background: rgba(255, 255, 255, 1);  border-bottom-style: none; font-size: 14px; }
+table tr th, table tr th a, table tr th a:hover { color: #666; font-weight: normal; }
+table tbody tr th {  vertical-align: top; }
+tr td, tr th { padding: 9px 9px;  border: 1px solid #fff; text-align: left; color: #4d4d4d; /* LTR */ }
+
+tr.odd { background: rgba(255, 255, 255, 1);}
+tr, tr.even { background: rgba(0, 0, 0, 0.063); }
+table ul.links {  margin: 0; padding: 0;  font-size: 1em; }
+table ul.links li { padding: 0 1em 0 0; }
+
+
+/* ------------------ Table Styles  ------------------ */
+.hazard-table td {width: 50%; padding: 5px 9px; }
+
+.small-table td { padding: 3px; }
+
+.views-table td { font-size: 12px; padding: 12px 9px; line-height: 14px;}
+.views-exposed-form label { font-size: 12px; padding-bottom: 3px; }
+.views-exposed-form select, input { font-size: 12px; }
+.views-submit-button { padding:0; margin-top: -5px; }
+.views-exposed-form{ margin-bottom: 25px; background-color: #fff; padding: 10px; }
+
+.map-table { margin-bottom: 25px; }
+.map-table a { font-size: 12px; line-height: 16px;	 }
+.map-table h3 { margin-top: 15px; font-size: 14px; }
+
+.view-other-publications td { padding: 3px; }
+
+
+/* ------------------ Map page Styles  ------------------ */
+
+/*quad maps*/
+.field-name-field-map-image .field-item { float: left; }
+.field-name-field-report-image .field-item { float: left; border: 1px solid #ccc; }
+.field-name-field-authors .field-label { clear: both; }
+.field-name-field-gis-data .field-label { clear: both; }
+.field-name-field-year { float: left; margin-right: 5px; clear: both; }
+.field-name-field-file-size .field-label { clear: both; }
+.field-name-field-download .field-label { clear: both; }
+.field-name-field-series-id { float: left; margin-right: 5px; clear: both; }
+.field-name-field-series  { float: left; margin-right: 5px; }
+.view-quadrangle-maps tr, tr.even {  background:transparent; }
+
+/*county maps*/
+.field-name-field-map-image-county .field-item { float: left; }
+.field-name-field-report-image-county .field-item { float: left; }
+.field-name-field-authors-county .field-label { clear: both; }
+.field-name-field-year-county { float: left; margin-right: 5px; clear: both; }
+.field-name-field-file-size-county .field-label { clear: both; }
+.field-name-field-download-county .field-label { clear: both; }
+.field-name-field-series-id-county { float: left; margin-right: 5px; clear: both; }
+.field-name-field-series-county  { float: left; margin-right: 5px; }
+
+.field-name-field-map-image-state .field-item { float: left; }
+.field-name-field-description-state { clear: both; }
+
+/*statewide coal maps*/
+.view-statewide-coal-maps ul {display: block; margin-bottom: 15px; }
+.view-statewide-coal-maps li { display: block; width: 190px; height: 300px; float: left; list-style: none; text-align: center; line-height: 12px; }
+.view-statewide-coal-maps  h3 { clear: both; }
+.view-statewide-coal-maps .item-list ul li {margin: 0 0.25em 0.25em 0; }
+
+/*trace element maps*/
+.view-trace-element-maps ul {display: block; margin-bottom: 15px; }
+.view-trace-element-maps li { display: block; width: 195px; height: 380px; float: left; list-style: none; text-align: center; line-height: 12px; }
+.view-trace-element-maps  h3 { clear: both; }
+.view-trace-element-maps .item-list ul li {margin: 0 0.25em 0.25em 0; }
+
+/*topo maps*/
+
+
+/* ---------------- Recently Added Map Block  ---------------- */
+.view-recently-added-maps-for-download h2 { margin: 0 0 25px 0; }
+.view-recently-added-maps-for-download .views-row { margin-bottom: 15px; clear: both; min-height: 115px; border-bottom: 1px solid #eee; }
+.view-recently-added-maps-for-download .views-field-field-map-image-county { float: left; margin-right: 10px; width: 100px; }
+.view-recently-added-maps-for-download .views-field-field-map-image { float: left; margin-right: 10px; width: 100px; }
+.view-recently-added-maps-for-download .views-field-field-map-image-coal { float: left; width: 100px; }
+.view-recently-added-maps-for-download .views-field-field-map-image-state { float: left; width: 100px; }
+.view-recently-added-maps-for-download .views-field-field-map-image-topo-mines { float: left; width: 100px; margin-right: 5px; }
+.view-recently-added-maps-for-download .views-field-field-description-county { font-size: 12px; color: #4d4d4d; line-height: 16px; }
+.view-recently-added-maps-for-download .views-field-field-description-state { font-size: 12px; color: #4d4d4d; line-height: 16px; }
+.view-recently-added-maps-for-download .views-field-field-description { font-size: 12px; color: #4d4d4d; }
+.view-recently-added-maps-for-download .views-field-title { font-size: 14px; margin: 5px 0px 5px 0px; }
+.view-recently-added-maps-for-download .views-field-created {font-size: 12px; color: #4d4d4d; line-height: 16px; }
+.view-recently-added-maps-for-download .views-field-changed {font-size: 12px; color: #4d4d4d; line-height: 16px; }
+
+/* ------------------ View page Styles  ------------------ */
+.submitted { font-size: 11px; margin-bottom: 10px; color: #666; margin: 15px 0px; }
+.field { font-size: 12px; margin-bottom: 10px; line-height: 18px; }
+.field-type-link-field .field-item { float: left; padding-right: 5px; }
+.field-name-field-map-title .field-item { white-space: nowrap; }
+.views-view-grid .views-field { font-size: 12px; line-height: 16px; }
+.form-item .description {font-size: 10px; color: #999; line-height: 16px; }
+
+
+/* ------------------ User Menu Styles  ------------------ */
+.user-menu { display: block; width: 100%; margin: 0px 0px 20px 5px; min-height: 100px; background-color: #fff; border: 1px solid #eee;
+  -moz-box-shadow:    2px 2px 3px #a2a2a2;
+  -webkit-box-shadow: 2px 2px 3px #a2a2a2;
+  box-shadow:         2px 2px 3px #a2a2a2;
+}
+.user-menu h2{ margin-bottom: 0px; margin-top: 0px; color: #666; display: block; background-position: 100% ; background-color: #eee; width: 91%; padding: 10px; font-size: 12px; font-weight:normal; border-bottom: 1px solid #ccc;}
+.user-menu .content li { padding: 5px 0px; }
+.user-menu .content li a{ font-size: 14px; display: block; padding: 10px; line-height: 14px; font-weight: normal; width: 100%; margin-left: -20px; color: #666; 
+background: url('../images/arrow-right-on.png') no-repeat 85%; }
+.user-menu .content li a:hover { color: #333; background-color: #eee; }
+.user-menu .content p{ font-size: 12px; display: block; padding: 10px 10px 0px 10px; line-height: 16px; }
+
+
+/* ------------------ Outreach Pages  ------------------ */
+.outreach-group h3 { clear: both; display: block; padding: 5px 0px; border-top: 4px solid #ddd; }	
+.outreach-tabs { float: left; width: 115px; min-height: 150px; background: #fff; padding: 10px 5px; margin: 10px 20px 10px 0px; font-size: 12px; text-align: center; }
+.outreach-tabs img { margin-bottom: 3px; border: 2px solid #ccc; }
+
+.view-resources-glossary .view-content { font-size: 12px; margin-bottom: 15px; }
+.view-resources-glossary li { list-style: none; } 
+.view-resources-glossary .item-list li { margin-bottom: 25px; }
+		a.glossarylink { color: #069; }	
+.field-name-field-term-definition { padding-bottom: 10px;  border-bottom: 1px solid #999; }
+
+
+/* ------------------ Book Page Styles  ------------------ */
+.book-navigation { font-size: 12px; }
+.book-navigation .menu { border-top: 1px solid #fff; }
+			   ul.menu { margin-bottom: 15px; }
+
+
+/* ------------------ Award Page Styles  ------------------ */
+.field-name-field-award-image{ float: left; margin: 10px; }
+.views-field-field-award-image { float: left; margin-right: 10px; }
+
+
+/* ------------------ Staff Page Styles  ------------------ */
+.profile .field-label { font-size: 12px; margin-bottom: 0px; }
+.profile .field  {margin-bottom: 5px; }
+.profile .field-type-text-long { margin-bottom: 15px;}
+.field-name-field-section .field-item { font-size: 16px; font-weight: bold; }
+.field-name-field-job-title .field-item { font-size: 16px; font-weight: bold;}
+.field-name-field-staff-photo { float: left; margin: 0px 15px 25px 0px; height: 200px; }
+.field-name-field-education { clear: both; margin-top: 50px; }
+
+
+/* ------------------ Featured Publications Block  ------------------ */
+.node-isgs-featured-publications .field-type-link-field .field-item {float: none; }
+.view-isgs-featured-publications .field-content img {float: left; margin: 0px 10px 10px 0px; }
+.view-isgs-featured-publications .field-content { margin: 5px 0px; font-size: 12px; }
+.view-isgs-featured-publications .field-content a { display: block; }
+.view-isgs-featured-publications .views-field-field-price { font-size: 12px; margin-bottom: 10px; }
+
+
+/* ------------------ Research Teaser Block  ------------------ */
+.view-research td { width: 50%; padding: 5px; }
+.view-research .item-list ul li { list-style-type: none; margin-left: 0; }
+.view-research li a { width: 100%; padding: 0px 10px 0px 13px; background: #fff url('../images/arrow-right-off.png') no-repeat 0px 3px; font-size: 12px; }
+.view-research li a:hover { color: #333;  padding: 0px 10px 0px 13px; background: #fff url('../images/arrow-right-on.png') no-repeat 0px 3px }
+
+
+/* ------------------ Heritage Memorial Pages  ------------------ */
+.field-name-field-birth-death-date .field-item { font-size: 16px; font-weight: bold;}
+.field-name-field-section-title .field-item { font-size: 16px; font-weight: bold; }
+.field-name-field-honored-by { border-top: 1px solid #ccc; padding-top: 10px; }
+.field-name-field-honored-by .field-label { font-size: 12px;}
+.field-name-field-citation-contributed-by .field-label { font-size: 12px; }
+.field-name-field-acknowledgments .field-label { font-size: 12px; }

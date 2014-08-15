@@ -1,0 +1,20 @@
+name = ISGS	
+description = A custom theme for the Illinois State Geological Survey.
+core = 7.x
+
+;CSS
+
+stylesheets[all][] = assets/css/style.css
+stylesheets[all][] = assets/css/colorbox.css
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+regions[help] = Help
+
+:JS
+
+scripts[] = assets/js/modernizr.js

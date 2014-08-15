@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************* HEADER *********************/
+
+/* header is the one that makes the black background in the top banner */
+#header { margin: 0; padding: 0; border: 0; position: relative; top: 0; left: 0; }
+/* handles PRI and UI at very top of page */
+#header #inrsbar { text-transform: uppercase; height: 1.0em; padding-top: .25em; padding-bottom: .10em; padding-left: .1em; padding-right: .1em; width: 56.25em; margin-left: -.1em;
+ background: #D9D2B8 url('../images/tanpribgtop.gif') repeat;  /* in top div only, special graphic */ }
+#header #inrsbar a {  font-size: smaller; color: #aaa; text-decoration: none; margin: 0px; font-weight: normal; }
+#header #inrsbar a:link, #header #inrsbar a:visited {/* this will change the color of the text in the first bar */color: #766354; }
+#header #inrsbar a:hover, #header #inrsbar a:focus { color: #625346; text-decoration: underline; }
+#header #inrsbar #inrstxt { float: left; padding-left: .5em; }
+	.IE6white { color: #ffffff; }
+a.inrstxt { color: #fff; font-weight: normal; }
+span.inrstxt { margin: 0 0 0 0; float: left; padding-left: .5em; }
+#header #inrsbar #uiuctxt { float: right; padding-right: .5em; }
+span.uiuctxt { margin: 0 0 0 0; float: right; adding-right: .5em; }
+
+/* this controls the 5 survey names */ 
+#header #surveys { clear:both; font-size: 0.76em; word-spacing: -1px; background-color:#E2DDC9; padding-left: .5em; padding-top: .2em; padding-bottom: .3em; border-top: 1px solid #9D8977; }
+#header #surveys a { color: #8B7663; text-decoration: none; font-weight: normal; }
+#header #surveys a.selectedsurvey { color: #9D8977; text-decoration: none; }
+#header #surveys a:hover, #header #surveys a:focus { color: #625346; text-decoration: underline; }
+#header #surveys ul { padding: 0; margin: 0; border: 0; }
+#header #surveys li { margin: 0; list-style: none; display:inline; padding-left: 0em; padding-right: 0em; line-height: 1.25em; }
+.navmarker { padding: 0; margin: 0; border: 0; color: #766354; }
+#header #surveys li.first { margin: 0; border: 0; list-style: none; display:inline; padding-left: 0em; padding-right: .1em; }
+
+/* ISGS and UI logos */
+#bannerimage { background: #FFFFFF url('../images/isgs-banner.jpg') repeat-y right top; height: 5.938em; position: relative; display: block; border: 0em; overflow: hidden; }
+#bannerimage #surveyname h1.logo { width: 285px; height: 58px; position: relative; padding-left: 15px; padding-top: 25px; color: #fff; }
+#bannerimage #surveyname h1.logo span{ background: url('../images/ISGSlogo.gif') no-repeat; position: absolute; width: 100%; height: 100%;}
+#bannerimage #uilogo { float: right; margin-top: -70px; margin-right: 10px;}
+#bannerimage #uilogo h2.logo { width: 38px; height: 50px; position: relative; overflow: hidden;}
+#bannerimage #uilogo h2 {margin-top: 0px; }
+#bannerimage #uilogo h2.logo span{ background: url('../images/i-logo.gif') no-repeat; position: absolute; width: 100%; height: 100%; }
+
+#header #NAVBar { clear:both; font-size: smaller; background-color:#62564A; padding-left: .5em;  height: 2em;  border-bottom: none; line-height: 2em; }
+#NAVBar #navlinks { float: left; }
+#NAVBar #navlinks ul { padding: 0; margin: 0; border: 0; }
+#NAVBar #navlinks li { margin: 0; list-style: none; display:-moz-inline-stack; display: inline-block; zoom:1; padding-left: .5em; padding-right: 1em; border-right: 2px solid #FFFFFF;
+ height: 2em;  line-height: 2em; }
+#NAVBar #Director { float: right; padding-right: .5em; }
+#NAVBar a { color: #FFF; text-decoration: none; font-weight: normal; }
+#NAVBar a:link, #NAVBar a:visited { color: #FFF; }
+#NAVBar a:hover, #NAVBar a:focus { color: #ccc; text-decoration: underline; }
+
+/******************* FOOTER *********************/
+
+
+#footerArea { clear: both; background-color:#E2DDC9; border-top: 1px solid #9D8977; position: relative; top: 0; height: 7em; padding: 0px 35px; color: #766354; }
+#footerArea h1,#footerArea h2,#footerArea h3,#footerArea h4,#footerArea h5 { margin-bottom: 0; padding-bottom: 0; }
+#footerArea h3.section-title { font-size: 0.80em; margin-bottom: -12px; }
+#footerArea p, #footerArea ul, #footerArea li { margin-top: 0; list-style: circle; line-height: 1.25em; }
+#footerArea li { padding: .2em; }	
+#footerArea a  { text-decoration:none; font-weight: bold; color: #766354; }
+#footerArea a:hover { color: #625346; }
+#footerArea h3 { margin-top: 0px; }
+
+/* layout for column one at the bottom */
+#bcol1 {  width: 40%;   border: 0px solid #DDDBD1;  margin: 10px 5px 5px 5px; float: left;}
+/* layout for column two, includes right indent; smaller than col 1 */
+#bcol2 {  width: 40%;   border: 0px solid #DDDBD1; margin: 10px 5px 5px 0px; float: right; }
+/* layout for column three at the bottom */
+#bcol3 { width: 32%;  border: 0px solid #DDDBD1;  margin: 5px 0px 5px 5px;  float: left;}
+/* layout for bottom of page; uses entire width with indents */
+#colbot { /* width: 900px;  */ width: 56.25em; border: 0px solid #666; float:left;  margin: 0px 5px 0px 5px;}
+/* navigation bars at the top and bottom of a page are smaller and lighter */
+.navbar { font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 80%; font-weight: lighter; text-align: center; color: #330000; text-decoration: none; }
+
+/* this start the Shop ISGS bar */
+#isgsbar { clear: both; font-size: smaller;  background-color: #E2DDC9; height: 2.1em; border-style: solid; border-bottom-width: 1px; border-left-color: #9D8977; 
+border-right-color: #9D8977;  border-bottom-color: #9D8977; border-top-color: #9E7C0A; padding-left: 7px; }
+#isgsbar #isgslinks { float: left; height: 25px; margin: 5px 0px 0px 5px; }
+#isgsbar #isgslinks ul { font-size: small; padding: 0; margin: 0; border: 0; }
+#isgsbar #isgslinks li { margin: 0; list-style: none; display:inline; color: #766354; }
+#isgsbar #isgslinks li.first { padding-left: 0; border-left: 0; margin: 0; list-style: none; display:inline; padding-right: .1em; }
+#isgsbar a:link, a:visited { color: #766354; text-decoration: none; font-weight: normal; }
+#isgsbar a:hover, #isgsbar a:focus { color: #625346; text-decoration: underline; }
+/* end Shop ISGS Bar**************** */
+
